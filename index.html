@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Skor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div class="scoreboard container d-flex flex-column justify-content-center">
+        <h2 style="text-align: center;">klik Player untuk memasukan nama</h2>
+        <div class="row row-cols-1 row-cols-md-2 text-center py-5 justify-content-center">
+        <div class="col col-auto py-3 points d-flex flex-column align-items-center">
+            <h2 id="player1"  onclick="ubahPlayer1()">Player 1</h2>
+            <!-- <button onclick="ubahPlayer1()">Ubah Player 1</button> -->
+            <p class="px-3" id="p1-display">0</p>
+
+            <div class="score-btns">
+                <button class="btn btn-primary" type="button" id="p1-button">+1</button>
+            </div>
+        </div>
+
+        <div class="col col-auto py-3 points d-flex flex-column align-items-center">
+            <h2 id="player2" onclick="ubahPlayer2()">Player 2</h2>
+            <!-- <button onclick="ubahPlayer2()">Ubah Player 2</button> -->
+            <p class="px-3" id="p2-display">0</p>
+            <div class="score-btns">
+                <button class="btn btn-primary" type="button" id="p2-button">+1</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="d-grid gap-2 col-8 col-md-4 mx-auto pb-5">
+        <select name="" id="winpoint" class="form-select" style="text-align: center;">
+            <option value="0" selected>Select Max Point</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+
+    <div class="d-grid gap-2 col-8 col-md-4 mx-auto pb-5">
+        <button class="btn btn-primary" type="button" id="reset">Reset</button>
+    </div>
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
